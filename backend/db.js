@@ -6,7 +6,7 @@ const PASSWORD = process.env.DB_PASSWORD;
 
 const mongoose = require("mongoose");
 
-mongoose.connect(`mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.lclag3k.mongodb.net/userinput`)
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.r5zry.mongodb.net/`)
 
 const userSchema = mongoose.Schema({
     input: String,

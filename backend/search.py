@@ -1,4 +1,4 @@
-from googlesearch import search
+from googlesearch import search # type: ignore
 from bs4 import BeautifulSoup
 import requests
 import sys
