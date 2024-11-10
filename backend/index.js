@@ -53,7 +53,7 @@ async function runFactCheck(para, statement) {
 
 //Routes
 app.post("/search", async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
+  res.header('Access-Control-Allow-Origin', '*');
   let factcheck; // Declare factcheck outside the try block
 
   try {
