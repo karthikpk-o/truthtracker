@@ -14,10 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true
-}));
+app.use(cors());
 
 
 //Function to verify whether input if fact or not
@@ -34,7 +31,7 @@ async function runFactCheck(para, statement) {
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
     const paragraph = para;
-    const condition = "just refer the given paragraph and say if the given statement is True or false or Not sure and give a one line explanation ";
+    const condition = "just refer the given paragraph and say if the given statement is True or false or Not sure and give a one line explanation if the stament is a question based on paragraph give the answer ";
     const prompt = condition + " .paragraph:" + paragraph + " Statement:" + statement;
 
     const result = await model.generateContent(prompt);

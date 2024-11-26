@@ -17,7 +17,7 @@ def google_search(query):
             if i == 10:
                 break
         try:
-            for i in range(3):
+            for i in range(5):
                 url = lines[i]
                 response = requests.get(url)
                 html_content = response.text

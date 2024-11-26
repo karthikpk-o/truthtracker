@@ -21,7 +21,7 @@ export function Input(){
         <br></br>
         <button style={containerStyle}
         onClick={()=>{
-            fetch("https://truthtracker-rho.vercel.app/search", {
+            fetch("http://localhost:3000/search", {
                 method: "POST",
                 body: JSON.stringify({
                     input: input,
