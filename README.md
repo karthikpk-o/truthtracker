@@ -61,4 +61,5 @@ This project is developed using Python and involves web scraping and API integra
 
 ## Contributing
 Contributions are welcome! Feel free to submit a pull request or open an issue to suggest improvements.
+
 ---
